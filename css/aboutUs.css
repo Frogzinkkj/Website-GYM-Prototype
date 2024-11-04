@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* CSS HEX */
+--dark-purple #461F39ff --white #FFFFFFff --tropical-indigo #8380FFff --black #000000ff --misty-rose #FFE6DEff * {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: #8380ffff;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 70px 0;
+}
+
+.header-gymlogo {
+  font-size: 32px;
+  font-weight: 900;
+  color: #8380ffff;
+  text-transform: uppercase;
+}
+
+.header-navbar-ul {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
+.header-navbar-ul a:nth-child(4) {
+  background: #684dff;
+  color: white;
+
+  padding: 5px 10px;
+
+  border-radius: 4px;
+  transition: box-shadow 0.4s, background 0.2s, color 0.2s;
+}
+
+.header-navbar-ul a:nth-child(4):hover {
+  background: #fff;
+  color: #684dff;
+
+  box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+header a,
+header p {
+  color: #8380ffff;
+  font-size: 28px;
+  font-weight: 700;
+  transition: color 0.3s;
+  text-transform: uppercase;
+}
+
+header a:hover,
+header p:hover {
+  color: #684dff;
+  cursor: pointer;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  place-items: center;
+
+  margin: 70px auto 0;
+
+  max-width: 2000px;
+  padding: 50px 70px 0;
+}
+
+.main-content {
+  display: grid;
+}
+
+.main-content-title {
+  font-size: 64px;
+
+  color: #8380ffff;
+
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.5;
+
+  margin-bottom: 20px;
+}
+
+.main-content-title {
+  cursor: default;
+}
+
+.main-content-title-decoration {
+  color: #fff;
+  background-color: #8380ffff;
+
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.main-content-description {
+  color: gray;
+
+  font-size: 20px;
+
+  margin-bottom: 30px;
+}
+
+.main-content-btn {
+  place-self: center;
+
+  color: #fff;
+  background: #8380ffff;
+
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 800;
+
+  padding: 5px 20px;
+  border-radius: 4px;
+
+  transition: box-shadow 0.4s, opacity 0.5;
+}
+
+.main-content-btn:hover {
+  box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+.main-content-btn:active {
+  opacity: 0.6;
+}
+
+.main-content-image {
+  grid-column: 2;
+  width: 700px;
+}
