@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us</title>
   <link rel="shortcut icon" href="./img/icons8-venus-de-milo-ios-17-filled-96.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/aboutUs.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
@@ -17,24 +17,27 @@
     <nav class="header-navbar" aria-label="primaria">
       <ul class="header-navbar-ul">
         <a href="index.html" class="header-navbar-ul-item">Início</a>
-        <a href="aboutUs.html" class="header-navbar-ul-item">Sobre Nós</a>
+        <a href="aboutUs.html" class="header-navbar-ul-item" onclick="loadAndScroll(event)">Sobre Nós</a>
         <a href="/" class="header-navbar-ul-item">Planos</a>
         <a href="/" class="header-navbar-ul-item">Entrar</a>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <div class="main-content">
-      <h1 class="main-content-title">Conheça Nosso Time de <span class="main-content-title-decoration">Profissionais</span></h1>
-      <p class="main-content-description">Nossa equipe conta com nutricionistas, psicólogos e educadores físicos que estão prontos para apoiar você em todas as etapas da sua jornada de saúde. Com um atendimento acolhedor e acessível, oferecemos orientações especializadas para quem busca bem-estar mental, uma alimentação equilibrada e evolução física. Conte conosco para alcançar seus objetivos de forma integrada e sustentável!.</p>
-      <a href="#" class="main-content-btn">Vamos Lá</a>
+  <main class="main-index">
+    <div class="main-content-index">
+      <h1 class="main-content-title-index">Bem-Estar e Saúde  em um <span class="main-content-title-decoration-index">Unico Lugar</span></h1>
     </div>
 
-    <picture class="main-content-image">
-      <img src="img/373881272_11471298.svg" alt="">
+    <picture class="main-content-image-index">
+      <img src="img/med.svg" alt="">
     </picture>
   </main>
+  <section>
+    <div id="rBody"></div>
+  </section>
+  <script src="script.js"></script>
+
 
 </body>
 
