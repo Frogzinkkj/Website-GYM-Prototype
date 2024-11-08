@@ -182,13 +182,20 @@ main {
   grid-row: 1;
   width: 800px;
 }
-footer {
-  text-align: center;
-  padding: 20px;
+.contacts {
+  display: flex;
   background-color: #fff;
-  color: #684dff;
+  margin: 0px auto 0;
+  max-width: 2000px;
+}
+.footer-nav-ul-coppy {
+  align-items: right;
+  gap: 70px;
 }
 
-footer p {
-  font-size: 16px;
+.instagram{
+  align-items: right;
+  gap: 70px;
+  max-width: 70px;
 }
+
