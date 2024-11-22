@@ -38,11 +38,11 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 50px 70px 0;
+
   background-color: #684dff;
   margin: 0px auto 0;
   max-width: 2000px;
-  padding: 50px 70px 0;
+  padding: 10px 70px 0;
 }
 
 .header-gymlogo {
@@ -108,13 +108,10 @@ main {
 
 .main-content-title-index {
   font-size: 64px;
-
   color: white;
-
   font-weight: 900;
   text-transform: uppercase;
   line-height: 1.5;
-
   margin-bottom: 20px;
 }
 
@@ -125,7 +122,6 @@ main {
 .main-content-title-decoration-index {
   color: #684dff;
   background-color: #fff;
-
   border-radius: 8px;
   padding: 5px 10px;
 }
@@ -155,8 +151,8 @@ main {
 }
 .main-index{
   background: #684dff;
-  margin-top: 50px;
-  padding: 50px 20px;
+ 
+  padding: 80px 10px;
  
   text-align: left;
   max-width: 100%;
