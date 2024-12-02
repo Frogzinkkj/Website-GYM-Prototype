@@ -1,0 +1,112 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* Basic styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4a53f0;
+  color: #fff;
+}
+
+.registration-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #4a53f0;
+}
+
+.registration-header {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.registration-container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form-block {
+  flex: 1;
+  background: #4a53f0;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.registration-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.registration-subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.registration-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #ff4a57;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #e63946;
+}
+
+.registration-footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.registration-footer a {
+  color: #ff4a57;
+  text-decoration: none;
+}
+
+.registration-image-block {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration-image {
+  max-width: 100%;
+  height: auto;
+}

@@ -13,7 +13,7 @@ html, body {
 #root {
   width: 100%;
   margin: 0 auto;
-  max-width: 2000px;
+
   padding: 0 2rem;
 }
 
@@ -36,7 +36,7 @@ html, body {
 
 .container-grid {
   width: 100%;
-  max-width: 2000px;
+
   margin: 0 auto;
   padding: 20px 1px;
   background-color: #684dff;
@@ -126,9 +126,14 @@ html, body {
 }
 
 .map-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   background: rgba(104, 77, 255, 0.05);
   width: 88%;
-  padding-left: 1px;
+  padding: 20px;
+  box-sizing: border-box;
   border-radius: 4px;
 }
 
@@ -141,6 +146,9 @@ html, body {
 }
 
 .map-container {
+  max-width: 600px;
+  width: 100%;
+  
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -189,6 +197,7 @@ html, body {
   display: flex; 
   justify-content: center; 
   align-items: center; 
+  max-width: 100%;
   width: 100%; 
   text-align: center; 
 }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - ANPEF</title>
+  <link rel="stylesheet" href="/css/signStyles/signUp.css">
+</head>
+<body>
+  <main class="registration-page">
+    <header class="registration-header">
+      <h1 class="logo">ANPEF</h1>
+    </header>
+    <div class="registration-container">
+      <div class="registration-form-block">
+        <h2 class="registration-title">Bem-vindo à ANPEF!</h2>
+        <p class="registration-subtitle">Crie sua conta para continuar.</p>
+        <form class="registration-form" action="/register" method="POST">
+          <input type="email" name="email" placeholder="Digite seu e-mail" required>
+          <input type="password" name="password" placeholder="Digite sua senha" required>
+          <button type="submit" class="submit-button">Registrar</button>
+        </form>
+        <p class="registration-footer">Já tem uma conta? <a href="/login">Entre</a></p>
+      </div>
+      <div class="registration-image-block">
+        <img src="img/illustrative-image.png" alt="Imagem ilustrativa" class="registration-image">
+      </div>
+    </div>
+  </main>
+</body>
+</html>
