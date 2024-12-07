@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro - ANPEF</title>
   <link rel="stylesheet" href="/css/signStyles/signUp.css">
+  <script>
+    function goToNextPage() {
+      window.location.href = "confirmEmail.html"; // Redireciona para a página de confirmação de e-mail
+    }
+  </script>
 </head>
 <body>
   <main class="registration-page">
@@ -15,15 +20,11 @@
       <div class="registration-form-block">
         <h2 class="registration-title">Bem-vindo à ANPEF!</h2>
         <p class="registration-subtitle">Crie sua conta para continuar.</p>
-        <form class="registration-form" action="/register" method="POST">
+        <form class="registration-form" onsubmit="event.preventDefault(); goToNextPage();">
           <input type="email" name="email" placeholder="Digite seu e-mail" required>
           <input type="password" name="password" placeholder="Digite sua senha" required>
           <button type="submit" class="submit-button">Registrar</button>
         </form>
-        <p class="registration-footer">Já tem uma conta? <a href="/login">Entre</a></p>
-      </div>
-      <div class="registration-image-block">
-        <img src="img/illustrative-image.png" alt="Imagem ilustrativa" class="registration-image">
       </div>
     </div>
   </main>

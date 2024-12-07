@@ -3,15 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plano Básico</title>
-  <link rel="stylesheet" href="/css/index.css">
+  <title>Confirme seu Email</title>
+  <link rel="stylesheet" href="/css/signUp.css">
+  <script>
+    function goToNextPage() {
+      window.location.href = "selectPlan.html"; // Redireciona para a página de seleção de plano
+    }
+  </script>
 </head>
 <body>
-  <div class="plan-selection">
-    <h1>Plano Básico - R$ 99,90/mês</h1>
-    <a href="selectPlanAdvanced.html" class="plan-button">Plano Avançado</a><br>
-    <a href="selectPlanPremium.html" class="plan-button">Plano Premium</a><br>
-    <a href="#" class="plan-button">Confirmar Plano Básico</a>
-  </div>
+  <main class="registration-page">
+    <div class="registration-steps">
+      <section class="registration-step active">
+        <h1 class="registration-title">Confirme seu Email</h1>
+        <form onsubmit="event.preventDefault(); goToNextPage();">
+          <input type="email" name="confirmEmail" placeholder="Confirme seu email" required>
+          <button type="submit" class="next-button">Próximo</button>
+        </form>
+      </section>
+    </div>
+  </main>
 </body>
 </html>

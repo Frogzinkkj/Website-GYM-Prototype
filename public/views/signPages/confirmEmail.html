@@ -4,18 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Confirme seu Email</title>
-  <link rel="stylesheet" href="/css/signUp.css">
-  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/signStyles/confirmEmail.css">
+  <script>
+    function goToNextPage() {
+      window.location.href = "selectPlan.html"; 
+    }
+    function confirmLater() {
+      goToNextPage();
+    }
+  </script>
 </head>
 <body>
   <main class="registration-page">
     <div class="registration-steps">
-      <section class="registration-step active" data-step="2">
+      <section class="registration-step active">
         <h1 class="registration-title">Confirme seu Email</h1>
-        <form action="#">
-          <input type="email" name="confirmEmail" placeholder="Confirme seu email" required>
-          <button type="submit" class="next-button">Próximo</button>
-        </form>
+        <p>Enviamos um e-mail para você. Clique no link no e-mail para confirmar seu registro.</p>
+        <button onclick="goToNextPage()" class="primary-button">Já confirmei! </button>
+        <button onclick="confirmLater()" class="secondary-button">Confirmar mais tarde</button>
       </section>
     </div>
   </main>

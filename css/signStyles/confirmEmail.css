@@ -1,0 +1,88 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #684dff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for the confirmation page */
+.registration-page {
+  background: #fff;
+  color: #684dff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title styles */
+.registration-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #684dff;
+  
+  margin-bottom: 10px;
+  
+
+}
+
+/* Subtitle styles */
+.registration-subtitle {
+  font-size: 16px;
+  color: #684dff;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.primary-button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #684dff;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.primary-button:hover {
+  background-color: #fff;
+  color:  #684dff;
+  border: 1px solid #684dff;
+  
+}
+
+.secondary-button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.secondary-button {
+  background-color: #fff;
+  color: #684dff;
+  border: 1px solid black;
+}
+
+.secondary-button:hover {
+  color: #fff;
+  background-color: #684dff;
+}
