@@ -16,6 +16,7 @@
 html, body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   background-color: #fff;
+  
 }
 
 img {
@@ -97,11 +98,12 @@ main {
   place-content: center;
   place-items: center;
   background-color: #684dff;
-
+  
   width: 100vw;
   margin: 0 auto;
   max-width: 100%;
   padding: 50px 0;
+  
 }
 
 .main-content-index {
