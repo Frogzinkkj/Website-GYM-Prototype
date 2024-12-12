@@ -2,20 +2,10 @@ body {
   margin: 0;
   padding: 0;
   background: radial-gradient(circle at 50% 50%, #192233 20%, #000);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   font-family: 'Raleway';
   color: white;
 }
@@ -42,7 +32,6 @@ body {
 }
 
 .field-container input {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -64,7 +53,7 @@ body {
 label {
   padding-bottom: 5px;
   font-size: 13px;
-  color: rgb(180 191 195);
+  color: #684dff;
 }
 
 input {
@@ -79,17 +68,13 @@ input {
 .ccicon {
   height: 38px;
   position: absolute;
-  right: 6px;
-  top: calc(50% - 17px);
+  right: 0px;
+  top: calc(50% - 24px);
   width: 60px;
 }
 
 /* CREDIT CARD IMAGE STYLING */
 .preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
   transition: none !important;
 }
 
@@ -115,12 +100,11 @@ input {
 .creditcard svg#cardfront,
 .creditcard svg#cardback {
   width: 100%;
-  -webkit-box-shadow: 1px 5px 6px 0px black;
   box-shadow: 1px 5px 6px 0px black;
   border-radius: 22px;
 }
 
-#generatecard{
+#generatecard {
   cursor: pointer;
   float: right;
   font-size: 12px;
@@ -128,14 +112,11 @@ input {
   padding: 2px 4px;
   background-color: #909090;
   border-radius: 4px;
-  cursor: pointer;
-  float:right;
 }
 
 /* CHANGEABLE CARD ELEMENTS */
 .creditcard .lightcolor,
 .creditcard .darkcolor {
-  -webkit-transition: fill .5s;
   transition: fill .5s;
 }
 
@@ -328,12 +309,8 @@ input {
 .creditcard {
   width: 100%;
   max-width: 400px;
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  transition: -webkit-transform 0.6s;
-  -webkit-transition: -webkit-transform 0.6s;
   transition: transform 0.6s;
-  transition: transform 0.6s, -webkit-transform 0.6s;
   cursor: pointer;
 }
 
@@ -342,18 +319,15 @@ input {
   position: absolute;
   width: 100%;
   max-width: 400px;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   color: #47525d;
 }
 
 .creditcard .back {
-  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
 .creditcard.flipped {
-  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }

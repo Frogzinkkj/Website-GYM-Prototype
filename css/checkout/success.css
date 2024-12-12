@@ -1,0 +1,73 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #684dff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-page {
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.success-message {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.success-message h1 {
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.success-message p {
+  font-size: 16px;
+  color: #333;
+}
+
+.confirm-button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #684dff;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 20px auto;
+  display: block;
+}
+
+.confirm-button:hover {
+  background-color: #fff;
+  color: #684dff;
+  border: 1px solid #684dff;
+}
