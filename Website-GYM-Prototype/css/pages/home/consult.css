@@ -1,0 +1,152 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #f4f4f4;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-bar {
+  width: 100%;
+  background: #684dff;
+  padding: 10px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-bar ul li {
+  display: inline;
+}
+
+.nav-bar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+  background-color: #fff;
+  color: #684dff;
+  border-radius: 5px;
+}
+
+.nav-bar ul li a.notify:hover {
+  background-color: #fff;
+  color: #684dff;
+  border-radius: 5px;
+  border: 1px solid #684dff;
+}
+
+.nav-bar ul li a.notify img {
+  vertical-align: middle;
+  display: inline-block;
+  transition: filter 0.3s ease;
+}
+
+.nav-bar ul li a.notify:hover img {
+  filter: invert(39%) sepia(100%) saturate(1000%) hue-rotate(180deg) brightness(90%) contrast(90%);
+}
+
+.consult-page {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  margin: 80px 20px 20px;
+}
+
+.consult-info {
+  text-align: center;
+}
+
+.consult-info h1 {
+  font-size: 32px;
+  color: #684dff;
+  margin-bottom: 40px;
+}
+
+.info-card {
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.info-card h2 {
+  font-size: 24px;
+  color: #684dff;
+}
+
+.info-card p {
+  font-size: 18px;
+  color: #333;
+}
+
+.info-card a {
+  color: #684dff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.info-card a:hover {
+  text-decoration: underline;
+}
+
+.calendar-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.calendar-section h2 {
+  font-size: 28px;
+  color: #684dff;
+  margin-bottom: 20px;
+}
+
+#calendar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.calendar-day {
+  width: 100px;
+  padding: 10px;
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.calendar-day.active {
+  background: #684dff;
+  color: #fff;
+}

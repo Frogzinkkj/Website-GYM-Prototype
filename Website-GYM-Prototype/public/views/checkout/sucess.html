@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento Bem-Sucedido</title>
+  <link rel="stylesheet" href="/css/checkout/success.css">
+</head>
+<body>
+  <main class="success-page">
+    <section class="success-section">
+      <div class="success-message">
+        <h1>Pagamento Bem-Sucedido!</h1>
+        <p>Seja Bem Vindo!</p>
+        <button onclick="goToHomePage()" class="confirm-button">Começar!</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function goToHomePage() {
+      window.location.href = '/public/views/home/home.html';
+    }
+  </script>
+</body>
+</html>

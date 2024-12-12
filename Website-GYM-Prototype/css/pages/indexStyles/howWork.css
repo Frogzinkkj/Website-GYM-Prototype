@@ -1,0 +1,113 @@
+.second-sec { 
+  background: #684dff;
+  margin-top: 50px;
+  padding: 50px 20px;
+  border-radius: 8px;
+  text-align: left;
+  max-width: 100%;
+  margin-left: auto; 
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.second-content{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.second-content-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  cursor: default;
+  
+}
+
+
+.second-content-description {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.flow-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+
+.flow-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 350px;
+  text-align: center;
+  gap: 10px;
+}
+.flow-item:hover{
+  
+  grid-template-columns: repeat(3,2fr);
+}
+
+.image-and-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.first-flow-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  filter: invert(100%) brightness(100%) sepia(0) saturate(0);
+}
+.first-flow-image-weight {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.flow-item h3 {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.flow-item p {
+  font-size: 16px;
+  color: #ffe6de;
+  margin-top: 10px;
+}
+.flow-item-button-container{
+  grid-column: span 3;
+  display: flex;
+  justify-content: center;
+}
+.start-button {
+  margin-top: 40px;
+  background: #fff;
+  color: #684dff;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-transform: uppercase;
+  transition: box-shadow 0.4s, background 0.2s, color 0.2s;
+}
+
+.start-button:hover {
+  background: #684dff;
+  color: #fff;
+  box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, 0.2), -1px -1px 10px 0px rgb(0, 0, 255, 0.2);
+}

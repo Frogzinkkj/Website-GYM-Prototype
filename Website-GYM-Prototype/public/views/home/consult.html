@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta</title>
+  <link rel="stylesheet" href="/css/pages/home/consult.css">
+</head>
+<body>
+  <header class="top-bar">
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="/public/views/home/inicial-screen.html">Início</a></li>
+        <li><a href="#">Consulta</a></li>
+        <li><a href="#">Vídeo Aula</a></li>
+        <li><a href="#">Nutricionista</a></li>
+        <li><a href="#">Personal</a></li>
+        <li><a href="#">Psicólogo</a></li>
+        <li><a href="#" class="notify"><img src="/public/img/notify.svg" alt="notify"></a></li>
+        <li><a href="/public/views/home/profile.html" class="profile"><img src="/public/img/profile.svg" alt="Eu"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="consult-page">
+    <section class="consult-info">
+      <h1>Consulta Agendada</h1>
+      <div class="info-card">
+        <h2>Horário</h2>
+        <p id="consult-time">15:00 - 16:00</p>
+      </div>
+      <div class="info-card">
+        <h2>Link do Google Meet</h2>
+        <p><a href="https://meet.google.com/xyz-abc-def" target="_blank">Clique aqui para acessar a consulta</a></p>
+      </div>
+      <div class="info-card">
+        <h2>Profissional</h2>
+        <p>Dr. Asdrubal - Educador Fisico</p>
+      </div>
+    </section>
+    <section class="calendar-section">
+      <h2>Calendário de Treinos</h2>
+      <div id="calendar"></div>
+    </section>
+  </main>
+  <script>
+    // Carregar dados do localStorage
+    const days = localStorage.getItem('days') ? localStorage.getItem('days').split(',') : ['Segunda-feira', 'Quarta-feira', 'Sexta-feira'];
+    const time = localStorage.getItem('time') || '15:00 - 16:00';
+    document.getElementById('consult-time').textContent = time;
+
+    // Função para criar o calendário
+    function createCalendar(days) {
+      const calendar = document.getElementById('calendar');
+      const weekDays = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+      weekDays.forEach(day => {
+        const dayElement = document.createElement('div');
+        dayElement.className = 'calendar-day';
+        dayElement.textContent = day;
+        if (days.includes(day)) {
+          dayElement.classList.add('active');
+        }
+        calendar.appendChild(dayElement);
+      });
+    }
+
+    createCalendar(days);
+  </script>
+</body>
+</html>

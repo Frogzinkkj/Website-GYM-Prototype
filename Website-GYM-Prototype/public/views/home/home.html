@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/css/pages/home/home.css">
+</head>
+<body>
+  <main class="home-page">
+    <section class="welcome-section">
+      <div class="welcome-message">
+        <img src="/public/img/profile.svg" alt="Foto do Prof. Haroldo" class="profile-photo">
+        <h1>Bem-vindo!</h1>
+        <p>Sou o Prof. Asdrubal , formado em Educação Física pela Universidade Federal , tenho mais de 4 anos de experiência como profissional de Educação Física e Personal Trainer.</p>
+        <p>Será um prazer ser seu Personal Trainer, vou elaborar planos de treinos personalizados para você, respeitando a sua rotina e objetivos. Sempre com a supervisão do nosso Coordenador Técnico Prof. Beltrano.</p>
+        <p>Para isso, temos três etapas:</p>
+        <ul>
+
+          <li>Fazer o teste de aptidão física. -- Vou enviar um teste físico com alguns exercícios simples, que vai me ajudar a ter uma ideia da sua condição física atual.</li>
+          <li>Informar suas medidas e fotos corporais. -- É bem fácil, você faz tudo pelo app e assim vamos poder acompanhar sua evolução.</li>
+        </ul>
+        <p>Com todas essas informações, vamos saber o seu biotipo (endomorfismo, mesomorfismo ou ectomorfismo) e assim vou montar seu primeiro plano de treino.</p>
+        <p>Você também terá um Nutricionista para tirar dúvidas sobre sua alimentação e suplementação.</p>
+        <p>Vamos te ajudar a atingir seus objetivos, com uma rotina mais saudável, melhorando seus treinos e alimentação.</p>
+        <p>Vamos em frente?</p>
+        <button onclick="goToNextStep()" class="proceed-button">Prosseguir</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function goToNextStep() {
+      window.location.href = '/public/views/home/next-step.html'; 
+    }
+  </script>
+</body>
+</html>

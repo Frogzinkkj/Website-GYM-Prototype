@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirme seu Email</title>
+  <link rel="stylesheet" href="/css/pages/signStyles/confirmEmail.css">
+  <script>
+    function goToNextPage() {
+      window.location.href = "adcInfo.html"; 
+    }
+    function confirmLater() {
+      goToNextPage();
+    }
+  </script>
+</head>
+<body>
+  <main class="registration-page">
+    <div class="registration-steps">
+      <section class="registration-step active">
+        <h1 class="registration-title">Confirme seu Email</h1>
+        <p>Enviamos um e-mail para você. Clique no link no e-mail para confirmar seu registro.</p>
+        <button onclick="goToNextPage()" class="primary-button">Já confirmei! </button>
+        <button onclick="confirmLater()" class="secondary-button">Confirmar mais tarde</button>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,179 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* Basic styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #684dff;
+  color: #fff;
+}
+
+.registration-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #684dff;
+}
+
+.registration-header {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.registration-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 2px solid #684dff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+.registration-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.registration-form-block {
+  flex: 1 1 50%;
+  min-width: 300px;
+  background: #684dff;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.registration-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.registration-subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.registration-form input {
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  width: 96%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #684dff;
+  background-color: #fff; 
+  border: 2px solid #684dff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #684dff; 
+  color: #fff; 
+  border-color: #684dff;
+  transform: scale(1.05);
+}
+.forgot-password-container {
+  width: 96%;
+  text-align: right;
+  margin-bottom: 15px; 
+  margin-top: -16px; 
+  cursor: pointer;
+}
+.forgot-password-button {
+  align-self: flex-end;
+  text-align: right; 
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.forgot-password-button:hover {
+  text-decoration: underline; 
+  color: #ccc;
+}
+
+.registration-footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.registration-footer a {
+  color: #ff4a57;
+  text-decoration: none;
+}
+
+.registration-image-block {
+  flex: 1 1 50%;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #684dff;
+}
+
+.registration-image {
+
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.register-button {
+  display: block;
+  width: 89%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #684dff;
+  background-color: #fff;
+  border: 2px solid #684dff;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #684dff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.register-button:hover {
+  background-color: #684dff; 
+  color: #fff; 
+  border-color: #684dff;
+  transform: scale(1.05);
+} 

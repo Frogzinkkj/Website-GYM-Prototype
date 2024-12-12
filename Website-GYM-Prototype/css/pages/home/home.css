@@ -1,0 +1,76 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #684dff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-page {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  margin: 20px;
+}
+
+.profile-photo {
+  position: absolute;
+  top: 10px;
+  left: 250px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.welcome-section {
+  text-align: center;
+}
+
+.welcome-message h1 {
+  font-size: 24px;
+  color: #684dff;
+}
+
+.welcome-message p {
+  font-size: 16px;
+  color: #684dff;
+  line-height: 1.5;
+}
+
+.welcome-message ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.welcome-message ul li {
+  font-size: 16px;
+  color: #684dff;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.proceed-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #684dff;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.proceed-button:hover {
+  background-color: #fff;
+  color: #684dff;
+  border: 1px solid #684dff;
+}

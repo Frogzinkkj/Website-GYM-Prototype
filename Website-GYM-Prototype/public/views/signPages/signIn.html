@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anpef</title>
+  <link rel="stylesheet" href="/css/pages/signStyles/signIn.css">
+  <script>
+    function goToNextPage() {
+      window.location.href = "confirmEmail.html"; 
+    }
+  </script>
+</head>
+<body>
+  <main class="registration-page">
+    <header class="registration-header">
+    </header>
+    <div class="registration-container">
+      <div class="registration-image-block">
+        <img src="/public/img/sign.svg" alt="Imagem de Registro" class="registration-image">
+      </div>
+      <div class="registration-form-block">
+        <h2 class="registration-title">Bem-vindo à ANPEF!</h2>
+        <p class="registration-subtitle">Faça login para continuar</p>
+        <form class="registration-form" onsubmit="event.preventDefault(); goToNextPage();">
+          <input type="email" name="email" placeholder="Digite seu e-mail" required>
+          <input type="password" name="password" placeholder="Digite sua senha" required>
+          <div class="forgot-password-container">
+            <a href="/public/views/signPages/forgotPassword.html" class="forgot-password-button">Esqueceu sua senha?</a>
+          </div>
+          <button type="submit" class="submit-button">Entrar</button>
+          <a href="/public/views/signPages/signUp.html" class="register-button">Ainda não tem uma conta? Clique aqui!</a>
+        </form>
+      </div>
+    </div>
+  </main>
+  

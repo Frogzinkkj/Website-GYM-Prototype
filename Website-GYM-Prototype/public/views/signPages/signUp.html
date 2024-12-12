@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anpef</title>
+  <link rel="stylesheet" href="/css/pages/signStyles/signUp.css">
+  <script>
+    function goToNextPage() {
+      window.location.href = "confirmEmail.html"; 
+    }
+  </script>
+</head>
+<body>
+  <main class="registration-page">
+    <div class="registration-container">
+      <h2 class="registration-title">Bem-vindo,</h2>
+      <p>Preencha as informações a seguir para criarmos sua conta:</p>
+      <form class="registration-form" id="registrationForm">
+        <div class="form-group">
+          <label for="firstName">Nome</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Digite seu nome" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Sobrenome</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Digite seu sobrenome" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Senha (mínimo de 8 caracteres)</label>
+          <input type="password" id="password" name="password" placeholder="Digite sua senha" minlength="8" required>
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirmar senha</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirme sua senha" required>
+        </div>
+        <p id="errorMessage" style="color: #684dff;"></p> 
+        <button type="submit" class="submit-button">Cadastrar</button>
+      </form>
+      <div class="registration-footer">
+        <p>Já tem uma conta? <a href="/public/views/signPages/signIn.html">Fazer login</a></p>
+      </div>
+    </div>
+  </main>
+  <script src="/public/js/confirmPassword.js"></script>
+</body>
+</html>
